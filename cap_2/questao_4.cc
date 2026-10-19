@@ -19,7 +19,7 @@ void inserirNumOrdenado(char num,Pilha &a, Pilha &b){
 Pilha pedir_n_numeros(){
     int n;
 
-    cout << "quantos números? ";
+    cout << "quantos numeros? ";
     cin >> n;
     cout << endl;
 
@@ -28,7 +28,7 @@ Pilha pedir_n_numeros(){
     char x;
 
     for(int i=0; i < n; i++){
-        cout << i + 1 <<  ") " << "número: ";
+        cout << i + 1 <<  ") " << "numero: ";
         cin >> x;
         cout << endl;
         inserirNumOrdenado(x,a,b);
@@ -43,5 +43,7 @@ int main() {
     while(!vaziap(a)){
         cout << desempilha(a) << endl;
     }
+
+    exibir_rodape(20);
     return 1;
 }

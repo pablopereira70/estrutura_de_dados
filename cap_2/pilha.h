@@ -55,8 +55,8 @@ char topo(Pilha P){
 }
 
 
-void destroi(Pilha *Q) {
-    free((*Q) -> item);
-    free(*Q);
-    *Q = NULL;
+void destroip(Pilha *P) {
+    free((*P) -> item);
+    free(*P);
+    *P = NULL;
 }
