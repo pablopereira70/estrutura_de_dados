@@ -17,10 +17,10 @@ void bubble_sort(float vetor[], int tamanho){
 
 int main(){
     float numeros[5] = {3.4, 3.23, 3.75, 3.22, 3.221};
-    cout << "Vetor (nao ordenado): ";
-    exibir_itens(numeros, 5);
+    cout << "Vetor (desordenado): ";
+    exibir_float(numeros, 5);
     bubble_sort(numeros, 5);
     cout << "Vetor (ordenado): ";
-    exibir_itens(numeros, 5);
+    exibir_float(numeros, 5);
     return 0;
 }
